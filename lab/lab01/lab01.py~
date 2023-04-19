@@ -63,7 +63,7 @@ def double_eights(n):
     False
     """
 #    "*** YOUR CODE HERE ***"
-    front,count,judge = n,0,0
+    front,count = n,0
     while front>0:
         front,back=front//10,front%10
         c=front%10
@@ -71,6 +71,10 @@ def double_eights(n):
             judge=1
             return True
         count+=1
-    if count<2 or judge == 0:
+    if count<2 or judge != 1:
         return False
+
+
+
+
 

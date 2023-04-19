@@ -134,5 +134,5 @@ def hailstone(x):
         else:
             x//=2
         step+=1
-     print(1)
+    print(1)
     return step
